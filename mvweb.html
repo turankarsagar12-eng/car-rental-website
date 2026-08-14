@@ -1,0 +1,637 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DriveHub Car Rentals</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container nav-container">
+
+        <a href="#" class="logo">
+            <i class="fa-solid fa-car-side"></i>
+            <div>
+                <span>Drive<span class="blue">Hub</span></span>
+                <small>Car Rentals</small>
+            </div>
+        </a>
+
+        <nav class="navbar" id="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#cars">Cars</a>
+            <a href="#about">About Us</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-right">
+            <a href="tel:+1234567890" class="phone">
+                <i class="fa-solid fa-phone"></i>
+                +1 234 567 890
+            </a>
+
+            <a href="#" class="login-btn">Login / Sign Up</a>
+        </div>
+
+        <button class="menu-btn" id="menuBtn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+    </div>
+</header>
+
+
+<main>
+
+<section class="hero" id="home">
+
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+
+        <div class="hero-text">
+
+            <h1>
+                Find the Perfect Car<br>
+                for <span>Your Journey</span>
+            </h1>
+
+            <p>
+                Choose from a wide range of vehicles and book
+                your ride in just a few clicks. Fast, easy and reliable.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#cars" class="primary-btn">
+                    Explore Cars
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <a href="#about" class="secondary-btn">
+                    Learn More
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="container search-container">
+
+        <form class="search-box" id="searchForm">
+
+            <div class="search-field">
+                <label>Pick-up Location</label>
+
+                <div class="input-box">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <input type="text"
+                           id="location"
+                           placeholder="Enter location">
+                </div>
+            </div>
+
+
+            <div class="search-field">
+                <label>Pick-up Date</label>
+
+                <div class="input-box">
+                    <i class="fa-solid fa-calendar"></i>
+                    <input type="date" id="pickupDate">
+                </div>
+            </div>
+
+
+            <div class="search-field">
+                <label>Return Date</label>
+
+                <div class="input-box">
+                    <i class="fa-solid fa-calendar"></i>
+                    <input type="date" id="returnDate">
+                </div>
+            </div>
+
+
+            <div class="search-field">
+                <label>Car Type</label>
+
+                <div class="input-box">
+                    <i class="fa-solid fa-car"></i>
+
+                    <select id="carType">
+                        <option value="all">All Types</option>
+                        <option value="suv">SUV</option>
+                        <option value="sedan">Sedan</option>
+                        <option value="hatchback">Hatchback</option>
+                    </select>
+                </div>
+            </div>
+
+
+            <button type="submit" class="search-btn">
+                Search Cars
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+
+<section class="cars-section" id="cars">
+
+    <div class="container">
+
+        <div class="section-title">
+            <span>FEATURED CARS</span>
+
+            <h2>Featured Cars</h2>
+
+            <p>
+                Top picks from our most popular rentals
+            </p>
+        </div>
+
+
+        <div class="cars-grid">
+
+
+            <div class="car-card" data-type="suv">
+
+                <div class="car-image">
+
+                    <span class="car-category">SUV</span>
+
+                    <img src="https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=900&q=80"
+                         alt="Toyota Fortuner">
+
+                </div>
+
+                <div class="car-content">
+
+                    <h3>Toyota Fortuner</h3>
+
+                    <div class="car-info">
+                        <span>
+                            <i class="fa-solid fa-user"></i>
+                            7 Seats
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-gears"></i>
+                            Automatic
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-gas-pump"></i>
+                            Diesel
+                        </span>
+                    </div>
+
+                    <div class="car-bottom">
+
+                        <div class="price">
+                            $65 <small>/ day</small>
+                        </div>
+
+                        <button class="book-btn">
+                            Book Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="car-card" data-type="sedan">
+
+                <div class="car-image">
+
+                    <span class="car-category sedan">Sedan</span>
+
+                    <img src="https://images.unsplash.com/photo-1550355291-bbee04a92027?auto=format&fit=crop&w=900&q=80"
+                         alt="Honda City">
+
+                </div>
+
+                <div class="car-content">
+
+                    <h3>Honda City</h3>
+
+                    <div class="car-info">
+
+                        <span>
+                            <i class="fa-solid fa-user"></i>
+                            5 Seats
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-gears"></i>
+                            Automatic
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-gas-pump"></i>
+                            Petrol
+                        </span>
+
+                    </div>
+
+                    <div class="car-bottom">
+
+                        <div class="price">
+                            $45 <small>/ day</small>
+                        </div>
+
+                        <button class="book-btn">
+                            Book Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="car-card" data-type="suv">
+
+                <div class="car-image">
+
+                    <span class="car-category suv-blue">SUV</span>
+
+                    <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=900&q=80"
+                         alt="Hyundai Creta">
+
+                </div>
+
+                <div class="car-content">
+
+                    <h3>Hyundai Creta</h3>
+
+                    <div class="car-info">
+
+                        <span>
+                            <i class="fa-solid fa-user"></i>
+                            5 Seats
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-gears"></i>
+                            Automatic
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-gas-pump"></i>
+                            Diesel
+                        </span>
+
+                    </div>
+
+                    <div class="car-bottom">
+
+                        <div class="price">
+                            $55 <small>/ day</small>
+                        </div>
+
+                        <button class="book-btn">
+                            Book Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="car-card" data-type="hatchback">
+
+                <div class="car-image">
+
+                    <span class="car-category hatchback">
+                        Hatchback
+                    </span>
+
+                    <img src="https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=900&q=80"
+                         alt="Swift Dzire">
+
+                </div>
+
+                <div class="car-content">
+
+                    <h3>Swift Dzire</h3>
+
+                    <div class="car-info">
+
+                        <span>
+                            <i class="fa-solid fa-user"></i>
+                            5 Seats
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-gears"></i>
+                            Manual
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-gas-pump"></i>
+                            Petrol
+                        </span>
+
+                    </div>
+
+                    <div class="car-bottom">
+
+                        <div class="price">
+                            $35 <small>/ day</small>
+                        </div>
+
+                        <button class="book-btn">
+                            Book Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="services" id="services">
+
+    <div class="container services-grid">
+
+        <div class="service-card">
+
+            <div class="service-icon">
+                <i class="fa-solid fa-shield-halved"></i>
+            </div>
+
+            <h3>Safe & Secure</h3>
+
+            <p>
+                Your safety is our priority with
+                well-maintained cars.
+            </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+            <div class="service-icon">
+                <i class="fa-solid fa-tag"></i>
+            </div>
+
+            <h3>Best Price Guarantee</h3>
+
+            <p>
+                We offer the best prices with
+                no hidden charges.
+            </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+            <div class="service-icon">
+                <i class="fa-solid fa-headset"></i>
+            </div>
+
+            <h3>24/7 Customer Support</h3>
+
+            <p>
+                Our support team is always
+                ready to help you.
+            </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+            <div class="service-icon">
+                <i class="fa-solid fa-circle-xmark"></i>
+            </div>
+
+            <h3>Free Cancellation</h3>
+
+            <p>
+                Cancel your booking for free
+                up to 24 hours.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="about" id="about">
+
+    <div class="container about-grid">
+
+        <div class="about-text">
+
+            <span class="small-title">ABOUT US</span>
+
+            <h2>Your Trusted Car Rental Partner</h2>
+
+            <p>
+                DriveHub is a modern car rental platform that
+                helps customers explore, compare and book
+                rental cars easily.
+            </p>
+
+            <p>
+                We provide a wide range of vehicles with
+                comfortable, reliable and affordable rental
+                options for every journey.
+            </p>
+
+            <a href="#" class="about-btn">
+                Read More
+            </a>
+
+        </div>
+
+
+        <div class="about-image">
+
+            <img src="https://images.unsplash.com/photo-1504215680853-026ed2a45def?auto=format&fit=crop&w=1000&q=80"
+                 alt="Rental Car">
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="contact" id="contact">
+
+    <div class="container contact-box">
+
+        <div>
+            <span class="small-title">CONTACT US</span>
+
+            <h2>Ready to Start Your Journey?</h2>
+
+            <p>
+                Book your perfect car today and enjoy
+                a comfortable journey.
+            </p>
+        </div>
+
+        <a href="mailto:info@drivehub.com" class="primary-btn">
+            Contact Us
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+    </div>
+
+</section>
+
+</main>
+
+
+
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+        <div class="footer-brand">
+
+            <a href="#" class="logo">
+
+                <i class="fa-solid fa-car-side"></i>
+
+                <div>
+                    <span>Drive<span class="blue">Hub</span></span>
+                    <small>Car Rentals</small>
+                </div>
+
+            </a>
+
+            <p>
+                Your trusted partner for car rentals.
+                Drive safe, travel happy!
+            </p>
+
+            <div class="social-icons">
+
+                <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Quick Links</h3>
+
+            <a href="#home">Home</a>
+            <a href="#cars">Cars</a>
+            <a href="#about">About Us</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Support</h3>
+
+            <a href="#">FAQ</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Cancellation Policy</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Contact Us</h3>
+
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                +1 234 567 890
+            </p>
+
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                info@drivehub.com
+            </p>
+
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                123 Drive Street
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+        <p>
+            © 2026 DriveHub Car Rentals. All rights reserved.
+        </p>
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
